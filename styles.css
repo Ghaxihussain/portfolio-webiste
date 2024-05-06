@@ -1,0 +1,274 @@
+/* styles.css */
+
+/* Custom styles for header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Custom styles for sections */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.skill-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-card {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Custom styles for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Add custom styles for the accomplishments section */
+#accomplishments .card {
+    transition: transform 0.3s ease;
+}
+
+#accomplishments .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* Add custom styles for the accomplishments section */
+#accomplishments .card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+#accomplishments .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#accomplishments .card-title {
+    font-size: 1.5rem;
+}
+
+#accomplishments .card-text {
+    font-size: 1.25rem;
+}
+/* Add custom styles for the profile picture */
+.profile-picture {
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff; /* Optional: Add border for better contrast */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+/* Add custom styles for the profile picture */
+.profile-picture {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.front-img,
+.back-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.back-img {
+    transform: rotateY(180deg);
+}
+
+.profile-picture:hover .image-container {
+    transform: rotateY(180deg);
+}
+/* Add custom styles for the profile picture */
+.profile-picture {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: transform 0.5s ease;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.front-img,
+.back-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.back-img {
+    transform: rotateY(180deg);
+    visibility: hidden; /* Initially hide the back image */
+}
+
+.profile-picture:hover .image-container {
+    transform: rotateY(180deg);
+}
+
+.profile-picture:hover .back-img {
+    visibility: visible; /* Show the back image on hover */
+    transform: rotateY(0deg);
+}
+/* Add custom styles for the profile picture */
+.profile-picture {
+    margin-top: 40px;
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: transform 0.5s ease;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.front-img,
+.back-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.back-img {
+    transform: rotateY(180deg);
+    visibility: hidden; /* Initially hide the back image */
+}
+
+.profile-picture:hover .image-container {
+    transform: rotateY(180deg);
+}
+
+.profile-picture:hover .back-img {
+    visibility: visible; /* Show the back image on hover */
+    transform: rotateY(0deg);
+}
+/* Add custom styles for the About section */
+.about-text h2 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #333; /* Set the color of the heading */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.about-text p {
+    font-size: 1.1rem; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust the line height as needed */
+    color: #666; /* Set the color of the text */
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+.card {
+    height: 100%; /* Ensure cards have the same height */
+    width: 100%; /* Ensure cards have the same width */
+    border: none; /* Remove border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.card-body {
+    padding: 20px; /* Add padding */
+}
+
+.card-title {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Add bold style */
+    color: #333; /* Set text color */
+}
+
+.card-text {
+    font-size: 18px; /* Increase font size */
+    line-height: 1.6; /* Adjust line height */
+    color: #666; /* Set text color */
+}
